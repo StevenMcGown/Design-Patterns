@@ -1,0 +1,30 @@
+TV is already on the home screen
+
+Loading Netflix...
+
+Netflix Movies:
+- The Land Before Time
+- Frozen
+- The Little Mermaid
+- Ice Age
+
+Netflix TV Shows:
+- Peppa Pig
+- My Little Pony
+- Garfield
+- Teenage Mutant Ninja Turtles
+
+Loading Hulu...
+
+Hulu Movies:
+- Cars
+- Cinderella
+- Wall-E
+- ET
+
+Hulu TV Shows:
+- sesame street
+- care bears
+- loney tunes
+
+Loading the Home Screen...
