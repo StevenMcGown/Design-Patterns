@@ -1,0 +1,51 @@
+***** Georgy is staring his round *****
+
+Current Hole stats:
+Par: 3
+Strokes: 5
+2 over par
+
+Round stats:
+Par: 3
+Strokes: 5
+2 over par
+
+Current Hole stats:
+Par: 2
+Strokes: 2
+Made par
+
+Round stats:
+Par: 5
+Strokes: 7
+2 over par
+
+Current Hole stats:
+Par: 3
+Strokes: 1
+2 under par
+
+Round stats:
+Par: 8
+Strokes: 8
+Making par
+
+Current Hole stats:
+Par: 3
+Strokes: 3
+Made par
+
+Round stats:
+Par: 11
+Strokes: 11
+Making par
+
+Current Hole stats:
+Par: 2
+Strokes: 3
+1 over par
+
+Round stats:
+Par: 13
+Strokes: 14
+1 over par
