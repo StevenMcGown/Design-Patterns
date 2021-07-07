@@ -1,0 +1,20 @@
+Assembling Tricycle frame
+Adding 3 wheel(s)
+Adding pedals
+Price: $54.95
+
+-----------------------------------
+
+Assembling Strider frame
+Adding 2 wheel(s)
+Price: $65.99
+
+-----------------------------------
+
+Assembling Kids Bike frame
+Adding 2 wheel(s)
+Adding training wheels
+Adding pedals
+Price: $80.99
+
+-----------------------------------
