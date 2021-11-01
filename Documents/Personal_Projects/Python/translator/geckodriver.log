@@ -1,0 +1,75 @@
+1631123256698	geckodriver	INFO	Listening on 127.0.0.1:35253
+1631123257706	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQ99UIq"
+1631123266957	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQ99UIq/search.json.mozlz4", (void 0)))
+1631123282579	Marionette	INFO	Listening on port 34893
+1631123282955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631123364919	Marionette	INFO	Stopped listening on port 34893
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631123372855	geckodriver	INFO	Listening on 127.0.0.1:47241
+1631123373836	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezZUviw"
+1631123376492	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezZUviw/search.json.mozlz4", (void 0)))
+1631123381005	Marionette	INFO	Listening on port 35405
+1631123381104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631123442140	geckodriver	INFO	Listening on 127.0.0.1:55345
+1631123442145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenOqdxm"
+1631123445309	Marionette	INFO	Marionette enabled
+1631123447702	Marionette	INFO	Stopped listening on port 35405
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenOqdxm/search.json.mozlz4", (void 0)))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631123450978	Marionette	INFO	Listening on port 46411
+1631123451137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.duolingo.com"
+1631123547561	geckodriver	INFO	Listening on 127.0.0.1:45025
+1631123547571	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJv7mbY"
+1631123549940	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJv7mbY/search.json.mozlz4", (void 0)))
+1631123555697	Marionette	INFO	Listening on port 36149
+1631123555831	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631123559261	Marionette	INFO	Stopped listening on port 46411
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.duolingo.com"
+1631123615315	Marionette	INFO	Stopped listening on port 36149
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631123616674	geckodriver	INFO	Listening on 127.0.0.1:54037
+1631123616700	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJRCpIn"
+1631123619429	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJRCpIn/search.json.mozlz4", (void 0)))
+1631123624679	Marionette	INFO	Listening on port 40221
+1631123624749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.duolingo.com"
+1631123679438	geckodriver	INFO	Listening on 127.0.0.1:49471
+1631123679450	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDa2uTC"
+1631123681719	Marionette	INFO	Stopped listening on port 40221
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0007,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1631123682194	Marionette	INFO	Marionette enabled
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDa2uTC/search.json.mozlz4", (void 0)))
+1631123687309	Marionette	INFO	Listening on port 36135
+1631123687443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631123708783	Marionette	INFO	Stopped listening on port 36135
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

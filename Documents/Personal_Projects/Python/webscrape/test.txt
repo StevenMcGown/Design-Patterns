@@ -1,0 +1,202 @@
+[<div class="product-info-box questions">
+<div class="content">
+<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+<div class="panel panel-default">
+<div class="panel-heading" id="heading_1" role="tab">
+<a aria-controls="collapse_1" aria-expanded="true" data-toggle="collapse" href="#collapse_1" role="button">
+<h4 class="panel-title">
+<strong class="text-uppercase lead">Question: 1</strong>
+<span class="pull-right"></span></h4>
+</a>
+</div>
+<div aria-labelledby="heading_1" class="panel-collapse collapse in" id="collapse_1" role="tabpanel">
+<div class="panel-body">
+<p class="lead">
+                        A solutions architect is designing a solution where users will be directed to a backup static error page if the primary website is unavailable. The primary website’s DNS records are hosted in Amazon Route 53 where their domain is pointing to an Application Load Balancer (ALB).<br/><br/>Which configuration should the solutions architect use to meet the company’s needs while minimizing changes and infrastructure overhead?
+                    </p>
+<div>
+<ol class="rounded-list" type="A">
+<li> Point a Route 53 alias record to an Amazon CloudFront distribution with the ALB as one of its origins. Then, create custom error pages for the distribution.</li>
+<li> Set up a Route 53 active-passive failover configuration. Direct traffic to a static error page hosted within an Amazon S3 bucket when Route 53 health checks determine that the ALB endpoint is unhealthy.</li>
+<li> Update the Route 53 record to use a latency-based routing policy. Add the backup static error page hosted within an Amazon S3 bucket to the record so the traffic is sent to the most responsive endpoints.</li>
+<li> Set up a Route 53 active-active configuration with the ALB and an Amazon EC2 instance hosting a static error page as endpoints. Route 53 will only send requests to the instance if the health checks fail for the ALB.</li>
+</ol>
+</div>
+<div class="collapse" id="answerQ1">
+<p>
+<strong>Answer(s):</strong>  B
+                            <br/>
+</p>
+<div class="bg-light-yellow">
+<h5><strong>Explanation:</strong></h5>
+<p>
+                                Active-passive failover<br/>Use an active-passive failover configuration when you want a primary resource or group of resources to be available the majority of the time and you want a secondary resource or group of resources to be on standby in case all the primary resources become unavailable. When responding to queries, Route 53 includes only the healthy primary resources. If all the primary resources are unhealthy, Route 53 begins to include only the healthy secondary resources in response to DNS queries.<br/><br/>To create an active-passive failover configuration with one primary record and one secondary record, you just create the records and specify Failover for the routing policy. When the primary resource is healthy, Route 53 responds to DNS queries using the primary record. When the primary resource is unhealthy, Route 53 responds to DNS queries using the secondary record.<br/><br/>How Amazon Route 53 averts cascading failures<br/><br/>As a first defense against cascading failures, each request routing algorithm (such as weighted and failover) has a mode of last resort. In this special mode, when all records are considered unhealthy, the Route 53 algorithm reverts to considering all records healthy.<br/><br/>For example, if all instances of an application, on several hosts, are rejecting health check requests, Route 53 DNS servers will choose an answer anyway and return it rather than returning no DNS answer or returning an NXDOMAIN (non-existent domain) response. An application can respond to users but still fail health checks, so this provides some protection against misconfiguration.<br/><br/>Similarly, if an application is overloaded, and one out of three endpoints fails its health checks, so that it's excluded from Route 53 DNS responses, Route 53 distributes responses between the two remaining endpoints. If the remaining endpoints are unable to handle the additional load and they fail, Route 53 reverts to distributing requests to all three endpoints.
+                            </p>
+</div>
+<div>
+<br/>
+</div>
+<div class="bg-light-yellow">
+<h5><strong>Reference:</strong></h5>
+<p>
+                                https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-problems.html
+                            </p>
+</div>
+<br/>
+</div>
+<a aria-controls="collapseExample" aria-expanded="false" class="btn btn-success" data-toggle="collapse" href="#answerQ1" role="button">Display Answer
+                    </a>
+<a aria-controls="collapse_1" aria-expanded="true" class="collapsed btn btn-primary" data-toggle="collapse" href="#collapse_1" role="button">Next Question
+                    </a>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-default">
+<div class="panel-heading" id="heading_2" role="tab">
+<a aria-controls="collapse_2" aria-expanded="true" data-toggle="collapse" href="#collapse_2" role="button">
+<h4 class="panel-title">
+<strong class="text-uppercase lead">Question: 2</strong>
+<span class="pull-right"></span></h4>
+</a>
+</div>
+<div aria-labelledby="heading_2" class="panel-collapse collapse in" id="collapse_2" role="tabpanel">
+<div class="panel-body">
+<p class="lead">
+                        A meteorological startup company has a custom web application to sell weather data to its users online. The company uses Amazon DynamoDB to store its data and wants to build a new service that sends an alert to the managers of four internal teams every time a new weather event is recorded. The company does not want this new service to affect the performance of the current application.<br/><br/>What should a solutions architect do to meet these requirements with the LEAST amount of operational overhead?
+                    </p>
+<div>
+<ol class="rounded-list" type="A">
+<li> Use DynamoDB transactions to write new event data to the table. Configure the transactions to notify internal teams.</li>
+<li> Have the current application publish a message to four Amazon Simple Notification Service (Amazon SNS) topics. Have each team subscribe to one topic.</li>
+<li> Enable Amazon DynamoDB Streams on the table. Use triggers to write to a single Amazon Simple Notification Service (Amazon SNS) topic to which the teams can subscribe.</li>
+<li> Add a custom attribute to each record to flag new items. Write a cron job that scans the table every minute for items that are new and notifies an Amazon Simple Queue Service (Amazon SQS) queue to which the teams can subscribe.</li>
+</ol>
+</div>
+<div class="collapse" id="answerQ2">
+<p>
+<strong>Answer(s):</strong>  A
+                            <br/>
+</p>
+<br/>
+</div>
+<a aria-controls="collapseExample" aria-expanded="false" class="btn btn-success" data-toggle="collapse" href="#answerQ2" role="button">Display Answer
+                    </a>
+<a aria-controls="collapse_2" aria-expanded="true" class="collapsed btn btn-primary" data-toggle="collapse" href="#collapse_2" role="button">Next Question
+                    </a>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-default">
+<div class="panel-heading" id="heading_3" role="tab">
+<a aria-controls="collapse_3" aria-expanded="true" data-toggle="collapse" href="#collapse_3" role="button">
+<h4 class="panel-title">
+<strong class="text-uppercase lead">Question: 3</strong>
+<span class="pull-right"></span></h4>
+</a>
+</div>
+<div aria-labelledby="heading_3" class="panel-collapse collapse in" id="collapse_3" role="tabpanel">
+<div class="panel-body">
+<p class="lead">
+                        A company is planning to use an Amazon DynamoDB table for data storage. The company is concerned about cost optimization. The table will not be used on most mornings in the evenings, the read and write traffic will often be unpredictable. When traffic spikes occur they will happen very quickly.<br/><br/>What should a solutions architect recommend?
+                    </p>
+<div>
+<ol class="rounded-list" type="A">
+<li> Create a DynamoDB table in on-demand capacity mode.</li>
+<li> Create a DynamoDB table with a global secondary Index.</li>
+<li> Create a DynamoDB table with provisioned capacity and auto scaling.</li>
+<li> Create a DynamoDB table in provisioned capacity mode, and configure it as a global table.</li>
+</ol>
+</div>
+<div class="collapse" id="answerQ3">
+<p>
+<strong>Answer(s):</strong>  A
+                            <br/>
+</p>
+<br/>
+</div>
+<a aria-controls="collapseExample" aria-expanded="false" class="btn btn-success" data-toggle="collapse" href="#answerQ3" role="button">Display Answer
+                    </a>
+<a aria-controls="collapse_3" aria-expanded="true" class="collapsed btn btn-primary" data-toggle="collapse" href="#collapse_3" role="button">Next Question
+                    </a>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-default">
+<div class="panel-heading" id="heading_4" role="tab">
+<a aria-controls="collapse_4" aria-expanded="true" data-toggle="collapse" href="#collapse_4" role="button">
+<h4 class="panel-title">
+<strong class="text-uppercase lead">Question: 4</strong>
+<span class="pull-right"></span></h4>
+</a>
+</div>
+<div aria-labelledby="heading_4" class="panel-collapse collapse in" id="collapse_4" role="tabpanel">
+<div class="panel-body">
+<p class="lead">
+                        A new employee has joined a company as a deployment engineer. The deployment engineer will be using AWS CloudFormation templates to create multiple AWS resources. A solutions architect wants the deployment engineer to perform job activities while following the principle of least privilege.<br/><br/>Which combination of actions should the solutions architect take to accomplish this goal? (Choose two.)
+                    </p>
+<div>
+<ol class="rounded-list" type="A">
+<li> Have the deployment engineer use AWS account roof user credentials for performing AWS CloudFormation stack operations.</li>
+<li> Create a new IAM user for the deployment engineer and add the IAM user to a group that has the PowerUsers IAM policy attached.</li>
+<li> Create a new IAM user for the deployment engineer and add the IAM user to a group that has the Administrate/Access IAM policy attached.</li>
+<li> Create a new IAM User for the deployment engineer and add the IAM user to a group that has an IAM policy that allows AWS CloudFormation actions only.</li>
+<li> Create an IAM role for the deployment engineer to explicitly define the permissions specific to the AWS CloudFormation stack and launch stacks using Dial IAM role.</li>
+</ol>
+</div>
+<div class="collapse" id="answerQ4">
+<p>
+<strong>Answer(s):</strong>  A,E
+                            <br/>
+</p>
+<br/>
+</div>
+<a aria-controls="collapseExample" aria-expanded="false" class="btn btn-success" data-toggle="collapse" href="#answerQ4" role="button">Display Answer
+                    </a>
+<a aria-controls="collapse_4" aria-expanded="true" class="collapsed btn btn-primary" data-toggle="collapse" href="#collapse_4" role="button">Next Question
+                    </a>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-default">
+<div class="panel-heading" id="heading_5" role="tab">
+<a aria-controls="collapse_5" aria-expanded="true" data-toggle="collapse" href="#collapse_5" role="button">
+<h4 class="panel-title">
+<strong class="text-uppercase lead">Question: 5</strong>
+<span class="pull-right"></span></h4>
+</a>
+</div>
+<div aria-labelledby="heading_5" class="panel-collapse collapse in" id="collapse_5" role="tabpanel">
+<div class="panel-body">
+<p class="lead">
+                        A company needs to store data in Amazon S3. A compliance requirement states that when any changes are made to objects the previous state of the object with any changes must be preserved. Additionally, files older than 5 years should not be accessed but need to be archived for auditing.<br/><br/>What should a solutions architect recommend that is MOST cost-effective?
+                    </p>
+<div>
+<ol class="rounded-list" type="A">
+<li> Enable object-level versioning and S3 Object Lock in governance mode</li>
+<li> Enable object-level versioning and S3 Object Lock in compliance mode</li>
+<li> Enable object-level versioning. Enable a lifecycle policy to move data older than 5 years to S3 Glacier Deep Archive</li>
+<li> Enable object-level versioning. Enable a lifecycle policy to move data older than 5 years to S3 Standard- Infrequent Access (S3 Standard-IA)</li>
+</ol>
+</div>
+<div class="collapse" id="answerQ5">
+<p>
+<strong>Answer(s):</strong>  C
+                            <br/>
+</p>
+<br/>
+</div>
+<a aria-controls="collapseExample" aria-expanded="false" class="btn btn-success" data-toggle="collapse" href="#answerQ5" role="button">Display Answer
+                    </a>
+<a aria-controls="collapse_5" aria-expanded="true" class="collapsed btn btn-primary" data-toggle="collapse" href="#collapse_5" role="button">Next Question
+                    </a>
+</div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+</div>]
